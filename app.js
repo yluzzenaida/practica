@@ -45,7 +45,7 @@ function getTasks() {
   for(let i = 0; i < tasks.length; i++) {
     let title = tasks[i].title;
     let description = tasks[i].description;
-   
+    let sum = 0;
     tasksView.innerHTML += `<div class="card mb-3">
         <div class="card-body">
           <p>${title} - S/. ${description}
@@ -53,15 +53,9 @@ function getTasks() {
           </p>
         </div>
       </div>`;
+    document.getElementById("resultado").value=parseInt(description)+sum;
   }
 }      
-
-function calcularTotal() {
- let precio = document.getElementById("description").value;
- let sum = 0;
-  
- document.getElementById("resultado").value=parseInt(precio)+parseInt(sum);
-}
 
 // Inicio
 
