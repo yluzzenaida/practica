@@ -57,6 +57,4 @@ function getTasks() {
   }
 }      
 
-// Inicio
-
 getTasks();
